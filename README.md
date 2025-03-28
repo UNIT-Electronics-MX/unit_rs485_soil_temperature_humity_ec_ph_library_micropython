@@ -25,9 +25,9 @@ This MicroPython library allows communication with the RS485 soil sensor to read
 6. Handle the sensor data as needed.
 7. Make sure to handle exceptions and errors as needed.
 
-> **Note:** This library is designed for the ESP32 and may require modifications for other platforms or hardware. Use the RS485 to TTL converter:  
-> [RS485 to TTL Converter](https://uelectronics.com/producto/convertidor-de-senal-ttl-a-rs485/)  
-> Connect the RX pin of the ESP32 to the A pin of the RS485 converter and the TX pin of the ESP32 to the B pin of the RS485 converter.
+> **Note:** This library is designed for the ESP32 and may require modifications for other platforms or hardware. 
+
+Recommended to use a 5 V [RS485 module](https://uelectronics.com/producto/convertidor-de-senal-ttl-a-rs485/) for compatibility with the ESP32. 
 
 ### Example
 

@@ -47,13 +47,16 @@ while True:
    pip install adafruit-ampy
    ```
 2. Connect your ESP32 to your computer via USB.
+
 3. Use ampy to transfer the `modbus_sensor.py` file to the ESP32:
    ```bash
    ampy --port /dev/ttyUSB0 put modbus_sensor.py
    ```
 
 Replace `/dev/ttyUSB0` with the appropriate port for your system, remeber to check the port using `ls /dev/tty*` command.
+
 4. After transferring the file, you can access it in your MicroPython environment.
+
 5. To run the script, you can use the REPL or create a new script that imports `modbus_sensor` and uses it as shown in the example above.
 
 # License

@@ -20,10 +20,14 @@ This MicroPython library allows communication with the RS485 soil sensor to read
 1. Clone the repository or download the `modbus_sensor.py` file.
 2. Copy the `modbus_sensor.py` file to your MicroPython device.
 3. Import the `ModbusSensor` class in your MicroPython script.
-4. Initialize the sensor with the appropriate UART pins and baudrate.
+4. Initialize the sensor with the appropriate UART pins and baud rate.
 5. Use the `get_sensor_data()` method to read the sensor values.
 6. Handle the sensor data as needed.
 7. Make sure to handle exceptions and errors as needed.
+
+> **Note:** This library is designed for the ESP32 and may require modifications for other platforms or hardware. Use the RS485 to TTL converter:  
+> [RS485 to TTL Converter](https://uelectronics.com/producto/convertidor-de-senal-ttl-a-rs485/)  
+> Connect the RX pin of the ESP32 to the A pin of the RS485 converter and the TX pin of the ESP32 to the B pin of the RS485 converter.
 
 ### Example
 
@@ -53,7 +57,7 @@ while True:
    ampy --port /dev/ttyUSB0 put modbus_sensor.py
    ```
 
-Replace `/dev/ttyUSB0` with the appropriate port for your system, remeber to check the port using `ls /dev/tty*` command.
+Replace `/dev/ttyUSB0` with the appropriate port for your system. Remember to check the port using the `ls /dev/tty*` command.
 
 4. After transferring the file, you can access it in your MicroPython environment.
 
